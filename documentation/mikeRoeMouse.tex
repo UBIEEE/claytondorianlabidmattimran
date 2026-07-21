@@ -1,0 +1,178 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{booktabs}
+\hypersetup{colorlinks=true, 
+            linkcolor=blue, 
+            urlcolor=cyan,}
+
+\title{Mike Roe Mouse: Parts, Specifications, and Schematics}
+\author{Clayton Freedman, Dorian Trotman, Labid Hossain, \\
+        Matt Lechocinski, Imran Sayeed}
+\date{July 2026}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\section{Electronics Parts}
+
+    \subsection{STM32F405RGT6 Microcontroller}
+
+        The F-series STM32 microcontroller will handle all computational tasks. \\
+        This includes navigation and maze-solving algorithms, IR emitter control, \\
+        and vacuum fan control.
+    
+        \subsubsection{Purchasing Information}
+
+            As of July 9th, 2026
+    
+            \begin{center}
+            \begin{tabular}{llllll}
+    
+                \toprule
+
+                \textbf{Name} & \textbf{Per Unit} & \textbf{Quantity} & 
+                \textbf{Total} & \textbf{Vendor}& \textbf{Link} \\
+
+                \midrule
+
+                STM32F405RGT6 & \textdollar5.85 & 1 & \textdollar5.85 & JLC & 
+                \href{https://jlcpcb.com/partdetail/STMicroelectronics-STM32F405RGT6/C15742}{Link} \\
+
+                \bottomrule
+            
+            \end{tabular}
+            \end{center}
+            
+        \subsubsection{Dimensions}
+
+            10 mm x 10 mm
+
+        \subsubsection{Electrical Specifications}
+
+            I/O pins CMOS and TTL compliant. \\
+            Not all I/O pins are 5V compliant. \\
+            Logic level voltage values from p.110 of data sheet.
+
+            \begin{center}
+            \begin{tabular}{llll}
+            
+                \toprule
+                \textbf{Logic Level} & \textbf{Logic Type} & \textbf{Min} & \textbf{Max} \\
+                \midrule
+                $V_{IH}$ & CMOS & $0.7V_{DD}$ & 5.0V \\
+                \midrule
+                $V_{IL}$ & TTL & 0V & 0.8V \\
+                \midrule
+                $V_{IH}$ & TTL & 2.0V & 5.0V \\
+                \bottomrule
+
+            \end{tabular}
+            \end{center}
+
+            Maximum voltage and current ratings for $V_{DD}$ and I/O. \\
+            $V_{DD}$ ranges are with respect to ground indicated by $V_{SS}$. \\
+            $V_{DD}$ ranges and I/O ranges on pp. 76--77 of data sheet. \\
+
+            \begin{center}
+            \begin{tabular}{llll}
+        
+            \toprule
+            \textbf{Max $V_{DD}$} & \textbf{Min $V_{DD}$} & \textbf{Max $I_{V_{DD}}$ Sink} & \textbf{Max $I_{V_{SS}}$ Source} \\
+            \midrule 
+            4.0V & -0.3V & 150mA & 150mA  \\
+            \bottomrule
+
+            \end{tabular}
+            \end{center}
+
+            \begin{center}
+            \begin{tabular}{ll}
+
+            \toprule
+            \textbf{Max $I_{I/O}$ Sink} & \textbf{Max $I_{I/O}$ Source} \\
+            \midrule
+            25mA & 25mA \\
+            \bottomrule
+            
+
+            \end{tabular}
+            \end{center}
+            
+    \subsection{SFH4545 Infrared Emitter}
+
+        Infrared emitter that the micromouse uses to detect distance from walls.\\
+        Distance calculated based on return time for infrared emitter.
+        
+        \subsubsection{Purchasing Information}
+
+            As of July 17th, 2026
+
+            \begin{center}
+            \begin{tabular}{llllll}
+
+                \toprule
+
+                \textbf{Name} & \textbf{Price Per Unit} & 
+                \textbf{Quantity} & \textbf{Total Cost} & \textbf{Vendor} & \textbf{Item Link} \\
+
+                \midrule
+
+                SFH4545 & \textdollar0.79 & 4 & \textdollar3.16 & DigiKey & 
+                \href{https://www.digikey.com/en/products/detail/ams-osram-usa-inc/SFH-4545/2205955}{Link} \\
+
+                \bottomrule
+
+            \end{tabular}
+            \end{center}
+        
+        \subsubsection{Electrical Specifications}
+
+            Operating current and voltage requirements. On pp. 4--5 of spec sheet. 
+
+            \begin{center}
+            \begin{tabular}{ll}
+            
+                \toprule
+                \textbf{Max Constant Forward Current} & \textbf{Max Pulsed Forward Current} \\
+                \midrule
+                100mA & 1A \\
+                \bottomrule
+                
+            \end{tabular}
+            \end{center}
+            
+
+            \begin{center}
+            \begin{tabular}{ll}
+            
+                \toprule
+                \textbf{Max Constant Forward Voltage} & \textbf{Max Pulsed Forward Voltage} \\
+                \midrule
+                1.7V & 2.9V \\
+                \bottomrule
+                
+            \end{tabular}
+            \end{center}
+            
+            Operational centroid wavelengths 
+
+            \begin{center}
+            \begin{tabular}{lll}
+            
+                \toprule
+                \textbf{Minimum} & \textbf{Typical} & \textbf{Maximum} \\
+                \midrule
+                920mm & 940mm & 960mm \\
+                \bottomrule
+                
+            \end{tabular}
+            \end{center}
+
+
+
+
+\end{document}
+

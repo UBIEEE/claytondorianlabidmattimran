@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Electronics Parts}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}STM32F405RGT6 Microcontroller}{1}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Purchasing Information}{1}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Dimensions}{1}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Electrical Specifications}{2}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.2}SFH4545 Infrared Emitter}{2}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Purchasing Information}{2}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {1.2.2}Electrical Specifications}{2}{subsubsection.1.2.2}%
