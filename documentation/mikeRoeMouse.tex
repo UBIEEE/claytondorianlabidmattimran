@@ -16,17 +16,88 @@
 \maketitle
 \tableofcontents
 
-\section{Electronics Parts}
+\section{Overview}
+
+    \begin{flushleft}
+    This micromouse is being developed for the 2027 APEC MicroMouse competition in March 2027. \\
+    \end{flushleft}
+
+    \subsection{Software Tools Overview}
+
+        \begin{flushleft}
+        The following software tools are being used.
+        \end{flushleft}
+
+        \begin{center}
+        \begin{tabular}{ll}
+
+            \toprule
+            \textbf{CAD} & OnShape \\
+            \midrule
+            \textbf{PCB/Schematic} & KiCAD \\
+            \midrule
+            \textbf{Repository} & Github \\
+            \midrule
+            \textbf{IDE} & STM32CubeIDE \\
+            \bottomrule
+    
+        \end{tabular}
+        \end{center}
+
+    \subsection{Parts Overview}
+
+        \begin{flushleft}
+        The following parts will be used.\\
+        \end{flushleft}
+
+        \begin{center}
+        \begin{tabular}{ll}
+
+            \toprule
+            \textbf{Microcontroller} & STM32F405RGT6 \\
+            \midrule
+            \textbf{Oscillator} & TBD \\
+            \midrule
+            \textbf{Bluetooth Microcontroller} & nRF52810 \\
+            \midrule
+            \textbf{Buck Converter} & TPS564242 \\
+            \midrule
+            \textbf{MOSFET} & IRLR024NTRPBF \\
+            \midrule
+            \textbf{IR Emitter} & SFH4545 \\
+            \midrule
+            \textbf{IR Phototransistor} & TEFT4300 \\
+            \midrule
+            \textbf{Red Emitter} & Check \\
+            \midrule
+            \textbf{Red Phototransistor} & TBD \\
+            \midrule
+            \textbf{Battery} & URGENEX 7.4V 2S 60C \\
+            \midrule
+            \textbf{IMU} & ICM-42670-P  \\
+            \bottomrule
+
+        \end{tabular}
+        \end{center}
+
+
+\section{Microcontroller Parts}
 
     \subsection{STM32F405RGT6 Microcontroller}
-
+        \begin{flushleft}
+        
         The F-series STM32 microcontroller will handle all computational tasks. \\
         This includes navigation and maze-solving algorithms, IR emitter control, \\
         and vacuum fan control.
+        
+        \end{flushleft}
     
         \subsubsection{Purchasing Information}
-
+            \begin{flushleft}
+            
             As of July 9th, 2026
+            
+            \end{flushleft}
     
             \begin{center}
             \begin{tabular}{llllll}
@@ -51,11 +122,14 @@
             10 mm x 10 mm
 
         \subsubsection{Electrical Specifications}
-
-            I/O pins CMOS and TTL compliant. \\
+            \begin{flushleft}
+            
+            I/O pins CMOS and TTL compliant.
             Not all I/O pins are 5V compliant. \\
             Logic level voltage values from p.110 of data sheet.
-
+            
+            \end{flushleft}
+                    
             \begin{center}
             \begin{tabular}{llll}
             
@@ -72,35 +146,39 @@
             \end{tabular}
             \end{center}
 
+            \begin{flushleft}
             Maximum voltage and current ratings for $V_{DD}$ and I/O. \\
             $V_{DD}$ ranges are with respect to ground indicated by $V_{SS}$. \\
             $V_{DD}$ ranges and I/O ranges on pp. 76--77 of data sheet. \\
-
-            \begin{center}
-            \begin{tabular}{llll}
-        
-            \toprule
-            \textbf{Max $V_{DD}$} & \textbf{Min $V_{DD}$} & \textbf{Max $I_{V_{DD}}$ Sink} & \textbf{Max $I_{V_{SS}}$ Source} \\
-            \midrule 
-            4.0V & -0.3V & 150mA & 150mA  \\
-            \bottomrule
-
-            \end{tabular}
-            \end{center}
+            \end{flushleft}
 
             \begin{center}
             \begin{tabular}{ll}
-
+        
             \toprule
-            \textbf{Max $I_{I/O}$ Sink} & \textbf{Max $I_{I/O}$ Source} \\
+            \textbf{Max $V_{DD}$} & 4.0V \\
             \midrule
-            25mA & 25mA \\
+            \textbf{Min $V_{DD}$} & -0.3V \\
+            \midrule
+            \textbf{Max $I_{V_{DD}}$ Sink} & 150mA \\ 
+            \midrule
+            \textbf{Max $I_{V_{SS}}$ Source} & 150mA\\
+            \midrule
+            \textbf{Max $I_{I/O}$ Sink} & 25mA\\
+            \midrule
+            \textbf{Max $I_{I/O}$ Source} & 25mA\\
             \bottomrule
             
 
             \end{tabular}
             \end{center}
+
+    \subsection{INSERT OSCILLATOR}
             
+
+    \subsection{8520 Fan Motor}
+
+\section{Arena Sensing Parts}
     \subsection{SFH4545 Infrared Emitter}
 
         Infrared emitter that the micromouse uses to detect distance from walls.\\
@@ -130,34 +208,28 @@
         
         \subsubsection{Electrical Specifications}
 
-            Operating current and voltage requirements. On pp. 4--5 of spec sheet. 
+            Operating current and voltage requirements. On pp. 4--5 of spec sheet. \\
+            All voltages and currents listed assume a forward direction through the intended direction through the device. \\
 
             \begin{center}
             \begin{tabular}{ll}
             
                 \toprule
-                \textbf{Max Constant Forward Current} & \textbf{Max Pulsed Forward Current} \\
+                \textbf{Max $I_{Constant}$} & 100mA \\ 
                 \midrule
-                100mA & 1A \\
+                \textbf{Max $I_{Pulsed}$} & 1A \\
+                \midrule
+                \textbf{Max $V_{Constant}$} & 1.7V \\ 
+                \midrule
+                \textbf{Max $V_{Pulsed}$} & 2.9V \\                
                 \bottomrule
                 
             \end{tabular}
             \end{center}
-            
 
-            \begin{center}
-            \begin{tabular}{ll}
-            
-                \toprule
-                \textbf{Max Constant Forward Voltage} & \textbf{Max Pulsed Forward Voltage} \\
-                \midrule
-                1.7V & 2.9V \\
-                \bottomrule
-                
-            \end{tabular}
-            \end{center}
-            
-            Operational centroid wavelengths 
+            \begin{flushleft}
+            Operational centroid wavelengths
+            \end{flushleft}
 
             \begin{center}
             \begin{tabular}{lll}
@@ -172,7 +244,14 @@
             \end{center}
 
 
+\section{Power Electronics and Battery}
+    \subsection{TPS564242 Buck Converter}
+    \subsection{IRLR024NTRPBF N-Channel MOSFET}
+    \subsection{Insert Schottky Diode}
+
+\section{Drivetrain}
+
+
 
 
 \end{document}
-
