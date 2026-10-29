@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "e8cfbda1-79d9-4550-b55f-32c3a932538d")
 	(paper "A4")
 	(lib_symbols)
@@ -18,11 +18,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "63008a6b-cb7f-4a2d-a5f9-6ff974596891")
 		(property "Sheetname" "Infrared_Receiver_Emitter"
 			(at 213.36 17.0684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32,6 +34,8 @@
 		)
 		(property "Sheetfile" "Infrared_Receiver_Emitter.kicad_sch"
 			(at 213.36 52.6546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -43,6 +47,52 @@
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 171.45 20.32)
+		(size 39.37 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "6a5453fc-4fa2-45cc-af1b-006f06443dc8")
+		(property "Sheetname" "Suction Fan"
+			(at 171.45 19.6084 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Suction_Fan.kicad_sch"
+			(at 171.45 52.6546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Micromouse_schematic"
+				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d"
+					(page "4")
 				)
 			)
 		)
@@ -60,12 +110,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "890896eb-6a44-49ed-adae-a8f5f69fbcf0")
 		(property "Sheetname" "Buck_Converter_3.3V"
 			(at 246.38 15.7984 0)
 			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,6 +127,7 @@
 		(property "Sheetfile" "Buck_Converter_3V3.kicad_sch"
 			(at 246.38 52.6546 0)
 			(show_name yes)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
