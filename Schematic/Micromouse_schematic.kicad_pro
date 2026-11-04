@@ -247,7 +247,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "MicroMouse_Library"
+    ]
   },
   "meta": {
     "filename": "Micromouse_schematic.kicad_pro",
@@ -420,6 +422,18 @@
     [
       "63008a6b-cb7f-4a2d-a5f9-6ff974596891",
       "Infrared_Receiver_Emitter"
+    ],
+    [
+      "eb33d575-df99-4e0f-b1c2-8bf455768294",
+      "Fan_Control"
+    ],
+    [
+      "d209da2d-89eb-4400-a5b6-268c82c1c760",
+      "STM32"
+    ],
+    [
+      "11932840-6127-4768-ada8-49bc0a6d6223",
+      "Bluetooth_Connection"
     ]
   ],
   "text_variables": {}

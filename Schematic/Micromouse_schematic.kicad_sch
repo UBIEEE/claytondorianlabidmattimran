@@ -91,6 +91,90 @@
 			)
 		)
 	)
+	(sheet
+		(at 151.13 17.78)
+		(size 26.67 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d209da2d-89eb-4400-a5b6-268c82c1c760")
+		(property "Sheetname" "STM32"
+			(at 151.13 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM32.kicad_sch"
+			(at 151.13 52.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Micromouse_schematic"
+				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 17.78)
+		(size 27.94 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eb33d575-df99-4e0f-b1c2-8bf455768294")
+		(property "Sheetname" "Fan_Control"
+			(at 181.61 17.0684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Fan_Control.kicad_sch"
+			(at 181.61 52.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Micromouse_schematic"
+				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d"
+					(page "4")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")

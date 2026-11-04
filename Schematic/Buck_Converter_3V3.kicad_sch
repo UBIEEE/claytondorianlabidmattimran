@@ -1184,6 +1184,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Feedback for Control\n"
+		(exclude_from_sim no)
+		(at 202.184 75.692 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1fd2bdda-5d99-4ec1-93ce-252298926ad7")
+	)
+	(text "Actual Output"
+		(exclude_from_sim no)
+		(at 83.82 92.202 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8d289da4-2942-48d5-976f-788407f55961")
+	)
 	(junction
 		(at 157.48 69.85)
 		(diameter 0)
