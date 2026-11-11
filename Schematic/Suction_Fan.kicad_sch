@@ -787,22 +787,20 @@
 		(uuid "3472c7d7-e76d-42b7-8f86-cb79b7bee8b9")
 	)
 	(junction
-		(at 77.47 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57697b6e-2fe6-419d-9941-2a51e18f2d9b")
-	)
-	(junction
-		(at 90.17 76.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a470a73d-6953-4b8c-a5ff-1eaec3294a04")
-	)
-	(junction
 		(at 93.98 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c112863c-6af7-46db-8e3b-3a86dd309b45")
+		(uuid "f838a3a4-90e9-4800-8178-ea7438ca9c6b")
+	)
+	(wire
+		(pts
+			(xy 90.17 76.2) (xy 93.98 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "158ae829-a2b7-41c4-a032-3f8557bac5f6")
 	)
 	(wire
 		(pts
@@ -866,23 +864,13 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 76.2) (xy 90.17 76.2)
+			(xy 93.98 76.2) (xy 96.52 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b4ef4b2b-44e8-4c1d-9982-8bc1b51ac33d")
-	)
-	(wire
-		(pts
-			(xy 90.17 76.2) (xy 96.52 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b687a7f1-72fd-4fbb-8f90-47dff1c7d7ac")
+		(uuid "ed593803-2232-4241-9a54-d25cf58e1b5e")
 	)
 	(wire
 		(pts
@@ -904,6 +892,17 @@
 			(justify right)
 		)
 		(uuid "4c09b4b1-0623-471a-8480-bc1b3e7ec038")
+	)
+	(hierarchical_label "PWM_Fan"
+		(shape input)
+		(at 63.5 68.58 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b45de55a-4921-40b7-8258-9a58a2c91794")
 	)
 	(symbol
 		(lib_id "Device:R")
@@ -976,6 +975,12 @@
 			(uuid "79b0c240-7a53-4918-9864-7dfca8ae7e44")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "R14")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "R14")
@@ -1059,6 +1064,12 @@
 			(uuid "ee15d2ba-0f2e-448b-9c36-8d9bcf2f7dc5")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "MOS1")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "MOS1")
@@ -1139,6 +1150,12 @@
 			(uuid "d804e4bc-0659-4c58-936e-c3e4125a4ba3")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "M1")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "M1")
@@ -1218,6 +1235,12 @@
 			(uuid "3f4b978f-6f35-4d98-b222-6977d4148b01")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "D6")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "D6")
@@ -1298,6 +1321,12 @@
 			(uuid "2c39ff96-cfef-4f1d-8c07-21bd17e3b6e5")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "R13")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "R13")
@@ -1376,12 +1405,23 @@
 			(uuid "6f0081d1-4f1a-4aec-b754-6ec9863a9a72")
 		)
 		(instances
+			(project "Suction_Fan"
+				(path "/6a953af3-3c84-4e13-a250-aa8ea4333942"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/6a5453fc-4fa2-45cc-af1b-006f06443dc8"
 					(reference "#PWR011")
 					(unit 1)
 				)
 			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
 		)
 	)
 )
