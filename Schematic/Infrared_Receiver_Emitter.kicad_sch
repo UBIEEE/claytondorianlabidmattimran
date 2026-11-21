@@ -206,6 +206,231 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Q_Photo_NPN"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "Q"
+				(at 5.08 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Q_Photo_NPN"
+				(at 5.08 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "NPN phototransistor, collector/emitter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "phototransistor NPN"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Q_Photo_NPN_0_1"
+				(polyline
+					(pts
+						(xy -3.81 3.175) (xy -1.905 1.27) (xy -1.905 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 4.445) (xy -1.27 2.54) (xy -1.27 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy -1.905 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "Q_Photo_NPN_1_1"
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -798,16 +1023,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Phototransistor"
-		(exclude_from_sim no)
-		(at 131.572 114.554 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "07335b4e-2ff6-4b6f-bc49-96c3af9c8a57")
-	)
 	(text "STM32 Digital Out (3.3V)"
 		(exclude_from_sim no)
 		(at 133.096 41.91 0)
@@ -817,16 +1032,6 @@
 			)
 		)
 		(uuid "3fc42e8c-1571-4c26-bd7a-7e300f3286d0")
-	)
-	(text "Phototransistor"
-		(exclude_from_sim no)
-		(at 131.572 104.648 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "7dca94ad-d772-4709-ad90-6b61330ea730")
 	)
 	(text "STM32 Digital Out (3.3V)"
 		(exclude_from_sim no)
@@ -857,6 +1062,12 @@
 		(uuid "7b6c7087-fdb4-4808-b5cf-c6754a561637")
 	)
 	(junction
+		(at 154.94 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b46fde2b-cd94-4929-aa5b-0fe8ffc9b652")
+	)
+	(junction
 		(at 143.51 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -864,7 +1075,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 114.3) (xy 123.19 114.3)
+			(xy 148.59 52.07) (xy 154.94 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07fa42a7-bfa5-4b4f-9c78-0004dd06e033")
+	)
+	(wire
+		(pts
+			(xy 114.3 114.3) (xy 127 114.3)
 		)
 		(stroke
 			(width 0)
@@ -874,13 +1095,13 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 114.3) (xy 143.51 114.3)
+			(xy 154.94 52.07) (xy 154.94 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33730c0a-c503-4ac2-8ccd-d71f75be5cf9")
+		(uuid "1802d188-a293-4a8d-9f54-58f4af446181")
 	)
 	(wire
 		(pts
@@ -924,6 +1145,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 74.93) (xy 154.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57c3b8a4-12fc-4f85-9c72-91d2c0152244")
+	)
+	(wire
+		(pts
 			(xy 114.3 104.14) (xy 114.3 109.22)
 		)
 		(stroke
@@ -931,6 +1162,16 @@
 			(type default)
 		)
 		(uuid "5b8445d8-03b7-4624-9873-32ed6ad74b56")
+	)
+	(wire
+		(pts
+			(xy 148.59 74.93) (xy 154.94 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5dad012b-7aa2-48a7-937d-79230414a08a")
 	)
 	(wire
 		(pts
@@ -944,7 +1185,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 74.93) (xy 152.4 74.93)
+			(xy 138.43 74.93) (xy 140.97 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1024,7 +1265,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 123.19 104.14)
+			(xy 114.3 104.14) (xy 127 104.14)
 		)
 		(stroke
 			(width 0)
@@ -1044,7 +1285,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 52.07) (xy 152.4 52.07)
+			(xy 138.43 52.07) (xy 140.97 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1054,13 +1295,23 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 104.14) (xy 156.21 104.14)
+			(xy 137.16 114.3) (xy 143.51 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca398af6-0c73-4fb9-9523-a3d0586bcec7")
+		(uuid "db165fde-ec17-4b9b-a758-24b4596aa961")
+	)
+	(wire
+		(pts
+			(xy 137.16 104.14) (xy 156.21 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f820681f-5267-4253-937f-91863ad8e641")
 	)
 	(hierarchical_label "Phototransistor_Out_2"
 		(shape output)
@@ -1190,7 +1441,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 156.21 74.93 180)
+		(at 144.78 74.93 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1201,7 +1452,7 @@
 		(fields_autoplaced yes)
 		(uuid "397b5626-0962-4efd-b9d6-27760f04d4a8")
 		(property "Reference" "D4"
-			(at 157.7975 67.31 0)
+			(at 146.3675 67.31 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1211,7 +1462,7 @@
 			)
 		)
 		(property "Value" "IR Emitter"
-			(at 157.7975 69.85 0)
+			(at 146.3675 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1221,7 +1472,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 74.93 0)
+			(at 144.78 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1232,7 +1483,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 74.93 0)
+			(at 144.78 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1243,7 +1494,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 156.21 74.93 0)
+			(at 144.78 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1254,7 +1505,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 156.21 74.93 0)
+			(at 144.78 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1553,6 +1804,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:Q_Photo_NPN")
+		(at 132.08 101.6 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "84465c73-ba02-4bbb-adf3-dbe35833d941")
+		(property "Reference" "Q4"
+			(at 132.08 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_Photo_NPN"
+			(at 132.08 93.98 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NPN phototransistor, collector/emitter"
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54a651d5-8a8f-4012-9f25-a9b8f4c44490")
+		)
+		(pin "2"
+			(uuid "58d70b31-f34a-4396-ad48-62e9c298f52f")
+		)
+		(instances
+			(project "Micromouse_schematic"
+				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/63008a6b-cb7f-4a2d-a5f9-6ff974596891"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:NMOS")
 		(at 133.35 49.53 90)
 		(mirror x)
@@ -1832,7 +2163,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 156.21 52.07 180)
+		(at 144.78 52.07 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1843,7 +2174,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f228269-2138-4739-a863-49ce5be3faa6")
 		(property "Reference" "D3"
-			(at 157.7975 44.45 0)
+			(at 146.3675 44.45 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1853,7 +2184,7 @@
 			)
 		)
 		(property "Value" "IR Emitter"
-			(at 157.7975 46.99 0)
+			(at 146.3675 46.99 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1863,7 +2194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 156.21 52.07 0)
+			(at 144.78 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1874,7 +2205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 156.21 52.07 0)
+			(at 144.78 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1885,7 +2216,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 156.21 52.07 0)
+			(at 144.78 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1896,7 +2227,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 156.21 52.07 0)
+			(at 144.78 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1923,7 +2254,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 172.72 73.66 0)
+		(at 154.94 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1934,7 +2265,7 @@
 		(fields_autoplaced yes)
 		(uuid "b9b4ccce-f0ac-45fd-b5e0-e98af01ed4d9")
 		(property "Reference" "#PWR07"
-			(at 172.72 80.01 0)
+			(at 154.94 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1945,7 +2276,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 172.72 78.74 0)
+			(at 154.94 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1955,7 +2286,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 172.72 73.66 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1966,7 +2297,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 73.66 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1977,7 +2308,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 172.72 73.66 0)
+			(at 154.94 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1994,6 +2325,85 @@
 			(project "Micromouse_schematic"
 				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/63008a6b-cb7f-4a2d-a5f9-6ff974596891"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_Photo_NPN")
+		(at 132.08 116.84 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bbc2b061-0c74-4db0-bc7c-06c903a997f9")
+		(property "Reference" "Q1"
+			(at 132.08 122.174 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Q_Photo_NPN"
+			(at 132.08 124.714 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "NPN phototransistor, collector/emitter"
+			(at 132.08 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "60237950-a329-4964-9571-0aadc4050f36")
+		)
+		(pin "2"
+			(uuid "a6a72879-f6cb-4ac8-9fa5-ec4d417b1a70")
+		)
+		(instances
+			(project "Micromouse_schematic"
+				(path "/e8cfbda1-79d9-4550-b55f-32c3a932538d/63008a6b-cb7f-4a2d-a5f9-6ff974596891"
+					(reference "Q1")
 					(unit 1)
 				)
 			)

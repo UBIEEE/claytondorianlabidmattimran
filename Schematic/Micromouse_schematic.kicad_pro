@@ -440,7 +440,7 @@
         "uuid": "e8cfbda1-79d9-4550-b55f-32c3a932538d"
       }
     ],
-    "used_designators": "D5-6,R14",
+    "used_designators": "#PWR10,#PWR12-23,AE1,C7-17,D5-6,FB1,Q1,Q4,R14-17,SW1-2",
     "variants": []
   },
   "sheets": [
@@ -463,10 +463,6 @@
     [
       "d209da2d-89eb-4400-a5b6-268c82c1c760",
       "STM32"
-    ],
-    [
-      "11932840-6127-4768-ada8-49bc0a6d6223",
-      "Bluetooth_Connection"
     ]
   ],
   "text_variables": {},
